@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var array = [8, 5, 1, 4, 3];
+console.log(array);
+var sorted = false;
+while(!sorted) {
+	sorted = true;
+	for(let counter = 0; counter < array.length -1; counter++) {
+		if(array[counter] > array[counter + 1]) {
+			var firstValue = array[counter];
+			var secondValue = array[counter + 1];
+			array[counter] = secondValue;
+			array[counter + 1] = firstValue;
+			sorted = false;
+		}
+	}
+}
+console.log(array);
+</script>
+</body>
+</html>
